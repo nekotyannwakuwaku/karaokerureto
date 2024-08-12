@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>カラオケ！曲決めルーレット</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mochiy+Pop+One&family=Silkscreen:wght@400;700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- おと -->
+    <audio id="botann-sound" src="img/botann.mp3"></audio>
+    <audio id="zyuu-sound" src="img/zyuu.mp3"></audio>
+
+
+    <!-- メニュー画面 -->
+    <div class="baibu-animation">
+
+        <div id="menu-screen" class="screen active">
+            <img class="haikei1" src="img/1.png">
+            <img class="rogo1" src="img/rogo.png">
+
+            <div class="lvs">
+                <div class="lv">
+                    <span class="triangle" id="triangle-a">▶</span>
+                    <span id="lv1" class="text">Lv.1</span>
+                </div>
+                <div class="lv">
+                    <span class="triangle" id="triangle-b">▶</span>
+                    <span id="lv2" class="text">Lv.2</span>
+                </div>
+                <div class="lv">
+                    <span class="triangle" id="triangle-c">▶</span>
+                    <span id="lv3" class="text">Lv.3</span>
+                </div>
+            </div>
+
+            <img class="muto" src="img/muto.png">
+
+            <div class="deco">
+                <img class="hatohaiiro" src="img/hatohaiiro.png">
+                <img class="hatokoipinku" src="img/hatokoipinku.png">
+                <img class="nikohato" src="img/nikohato.png">
+                <img class="sirosenhato" src="img/sirosenhato.png">
+            </div>
+
+            <!-- 下部画面の３つのボタン -->
+            <div class="controls">
+                <img id="hidari" src="img/hidari.png" class="control">
+                <img id="confirm" src="img/mannnaka.png" class="control">
+                <img id="migi" src="img/migi.png" class="control">
+            </div>
+
+        </div>
+
+
+
+        <!-- 抽選画面 -->
+        <div id="draw-screen" class="screen">
+            <img class="haikei2" src="img/2.png">
+            <img class="rogo2" src="img/rogo.png">
+
+            <div class="controls2">
+                <img id="hidari2" src="img/hidari.png" class="control2">
+                <img id="confirm2" src="img/mannnaka.png" class="control2">
+                <img id="migi2" src="img/migi.png" class="control2">
+            </div>
+
+            <div class="mato">
+                <img class="mato1" src="img/hatokoipinku.png">
+                <img class="mato2" src="img/hatokoipinku.png">
+                <img class="mato3" src="img/hatokoipinku.png">
+            </div>
+
+            <img class="zyuu" src="img/zyuu.png">
+            <img class="ateru" src="img/mato.png">
+        </div>
+
+
+
+        <!-- テーマ表示画面 -->
+        <div id="theme-screen" class="screen">
+            <p id="theme-display"></p>
+            <img class="haikei3" src="img/3.png">
+            <img class="rogo3" src="img/rogo.png">
+
+            <div class="deco">
+                <img class="hatohaiiro" src="img/hatohaiiro.png">
+                <img class="hatokoipinku" src="img/hatokoipinku.png">
+                <img class="nikohato" src="img/nikohato.png">
+                <img class="sirosenhato" src="img/sirosenhato.png">
+            </div>
+
+            <div class="controls3">
+                <img id="hidari3" src="img/hidari.png" class="control3">
+                <img id="confirm3" src="img/mannnaka.png" class="control3">
+                <img id="migi3" src="img/migi.png" class="control3">
+            </div>
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
